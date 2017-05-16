@@ -1,6 +1,6 @@
 # Taxonomic Routing
 
-This exercise has you building an experience to navigate some of the [Taxonomic Rank](https://en.wikipedia.org/wiki/Taxonomic_rank). We'll use [React Router]() to create the links and pages and manage browser history.
+This exercise has you building an experience to navigate some of the [Taxonomic Rank](https://en.wikipedia.org/wiki/Taxonomic_rank). We'll use [React Router](https://reacttraining.com/react-router/web/guides/quick-start) to create the links and pages and manage browser history. Heres a [React Router Tutorial](https://reacttraining.com/react-router/) to help you get started.
 
 
 ## Setup
@@ -69,4 +69,3 @@ Here are some ideas for future releases:
 * Capitalise the rank and classification names.
 
 * Think about a different way you could navigate around this data and implement it in a different branch.
-
