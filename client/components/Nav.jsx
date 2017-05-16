@@ -3,11 +3,14 @@ import Ranks from "../../data/ranks"
 
 const Nav = () => {
   return (
-    <ul>
-    {Object.keys(Ranks).map((rank) => {
-      return <li>{rank}</li>
-    })}
-    </ul>
+    <div  className="nav">
+      <h1> Nav</h1>
+      <ul>
+        {Object.keys(Ranks).map((rank) => {
+          return <li>{rank}</li>
+        })}
+      </ul>
+    </div>
   )
 }
 

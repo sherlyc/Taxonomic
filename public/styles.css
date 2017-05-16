@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.nav {
+  width: 25%;
+}
+
+.home {
+width: 75%;
+}
