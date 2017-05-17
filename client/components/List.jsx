@@ -7,7 +7,6 @@ const List = props => {
   var rank = props.match.params.rank //Phyla
   var data = ranks[rank]
 
-  console.log(data)
   return (
     <div className='subList'>
         <h1>{rank}</h1>
