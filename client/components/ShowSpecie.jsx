@@ -4,12 +4,13 @@ import species from "../../data/species"
 
 const ShowSpecie = ({match})=> {
   var id = match.params.id
+  var objSpecie = findSpecie(species, id)
 
   return (
     <div>
-      <h1>{name}</h1>
-      <p>{findSpecie(species, name).description}</p>
-      <div><Link to={`${match.url}/species`}>Show species</Link></div>
+      <h1>{objSpecie.name}</h1>
+      <p>{objSpecie.description}</p>
+      <p><img src={objSpecie.photo}></img></p>
     </div>
   )
 }
