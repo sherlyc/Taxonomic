@@ -13,7 +13,7 @@ const Species = ({match})=> {
   return (
     <div>
       <h1>Species</h1>
-      <h3>{findSpecies(species, name, singular)}</h3>
+      <h3>{findSpecies(species, name, singular).name}</h3>
     </div>
   )
 }
@@ -23,7 +23,10 @@ function getSingular (props) {
 }
 
 function findSpecies(data, name, rank) {
-    console.log(name);
+    return data.find((item) => {
+    return item[rank] == name
+  })
+
 }
 
 
