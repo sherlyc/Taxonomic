@@ -1,10 +1,11 @@
 import React from 'react'
-import Ranks from "../../data/ranks"
 import {Link} from 'react-router-dom'
 
-const List = (props) => {
-  var rank = props.match.params.rank //kingdoms
-  var data = Ranks[rank]
+import ranks from "../../data/ranks"
+
+const List = props => {
+  var rank = props.match.params.rank //Phyla
+  var data = ranks[rank]
 
   console.log(data)
   return (
@@ -12,7 +13,7 @@ const List = (props) => {
         <h1>{rank}</h1>
         <ul>
          {data.map((item) => {
-              return <li>{item.name}</li>
+              return <li><Link to={'/rank/' + rank + '/' +  item.name}>{item.name}</Link></li>
             })
          }
 
