@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-//import Singular from './Singular'
-
+import ListSpecies from './ListSpecies'
 import species from "../../data/species"
 import singular from "../../data/singular"
 
@@ -13,7 +12,7 @@ const Species = ({match})=> {
   return (
     <div>
       <h1>Species</h1>
-      <h3>{findSpecies(species, name, singular).name}</h3>
+      <ListSpecies name={name} rank={singular}/>
     </div>
   )
 }
@@ -22,12 +21,6 @@ function getSingular (props) {
    return singular[props]
 }
 
-function findSpecies(data, name, rank) {
-    return data.find((item) => {
-    return item[rank] == name
-  })
-
-}
 
 
 
